@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video and audio</title>
+  <style>
+    .blink {
+      animation: blinker 2s linear infinite;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    @media(max-width:600px) {
+      .videos {
+        width: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center; background-color: bisque; color: saddlebrown">
+    This is a video
+  </h1>
+  <div class="blink">
+    <marquee>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ea
+        debitis aliquid amet, repellendus accusantium praesentium vel
+        veritatis tempore aliquam sed aut corrupti aperiam error dolores
+        aspernatur autem velit sequi.
+      </p>
+    </marquee>
+  </div>
+  <div style="display: flex; justify-content: center;">
+
+    <video class="videos" width="500px." src="./firebase issue.mp4" controls></video>
+  </div>
+  <hr />
+  <h1 style="text-align: center; background-color: chartreuse; color: blue">
+    This is a audio
+  </h1>
+  <div style="display: flex; justify-content: center;">
+    <audio src="./firebase issue.mp4" controls></audio>
+  </div>
+  <hr />
+</body>
+
+</html>
